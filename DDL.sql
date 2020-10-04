@@ -27,7 +27,7 @@ create table coment_comentario (
   coment_id bigint unsigned not null auto_increment,
   usr_id bigint unsigned not null,
   f_id bigint unsigned not null,
-  comentario varchar(80) not null,
+  comentario varchar(100) not null,
   primary key (comentario_id),
   foreign key aut_usuario_fk (usr_id) references usuario (usr_id) on delete restrict on update cascade,
   foreign key aut_filme_fk (f_id) references filme (f_id) on delete restrict on update cascade
